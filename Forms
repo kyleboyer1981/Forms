@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+	
+	<div id="main">
+		<h1>Register</h1>
+	<form>
+
+		<label for="fName">First Name:</label>
+		<input id="fName" name="first" type="text" placeholder="John" required>
+		<label for="lName" id="lName">Last Name:</label>
+		<input id="lName" name="first" type="text" placeholder="Smith" required>	
+
+		<div>    
+			<label for="male">Male</label>
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="female">Female</label>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="other" id="other">Other</label>
+			<input type="radio" id="other" name="gender" value="other">
+		</div>
+
+		<div>
+		<label for="email">Email: </label>
+		<input id="email" type="email" placeholder="your email" name="email" required></input>
+
+		<label for="password" id="password">Password: </label>
+		<input id="password" type="password" minlength="8" maxlength="10" placeholder="password" required>
+		</div>
+		<br>  
+<div>
+		<label for="birthday">Birthday: </label>
+		
+			<select name="birthMonth" required>
+				<option value="" disabled selected>Month</option>
+				<option>January</option>
+				<option>February</option>
+				<option>March</option>
+				<option>April</option>
+				<option>May</option>
+			</select>
+
+			<select name="birthDay" value="Day">
+				<option value="" disabled selected>Day</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+
+			<select name="birthYear" value="Year">
+				<option value="" disabled selected>Year</option>
+				<option>1981</option>
+				<option>1982</option>
+				<option>1983</option>
+			</select>
+</div>
+<br>
+		
+		<label for="terms" id="check">I agree to the terms and conditions</label>
+		<input type="checkbox" id="terms" required>
+		
+<br>
+<br>
+		<button type="submit">Submit</button>
+
+	</form>
+</div>
+</body>
+</html>
